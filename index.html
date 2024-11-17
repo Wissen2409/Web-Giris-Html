@@ -1,77 +1,252 @@
-
 <!--Yorum satırı -->
+
+<!--Web 
+Internet sayfası - Ağ - Tarayıcı- Veri- İOT
+
+HTML 
+
+— Web üç parçadan oluşan bir yapıdır!!
+
+— 1 : Web’i oluşturan kodlar
+— 2 : Web’in internette kapladığı alan
+— 3 : Web’e giden bir adres
+— her web bir için bir adrese ihtiyaç var : 
+// adres nasıl olmalı : 
+
+
+—https için bir sertifika hizmeti satın alıyor olmanız lazım!!!
+https:// site içerisinde yapılan veri alma yada gönderme işlemleri şifreli yapılır
+http:// daha az güvenli olan bir protokoldür!!
+
+Alan adına ihtiyaç var : domain name : 
+Yazdığımız kodları internete açmak için, ihtiyacımız olan şey : hosting
+
+Domain name : hosting’i işaret etmesi lazım!!
+Domain size bir ip adresi verir!!
+
+Natro : 
+GüzelHosting
+GoDaddy
+Hostinger
+Vercel
+
+Hosting satın alındı  domain satın alındı!!
+
+Domain c name güncelleme!!
+
+Domainin ayarlarına girip, hosting’in ip numarası yazılır
+Dolasoyla, domaini girince, alan adına girilmesi sağlanır!!
+İnternete bağlanan her cihazın bir ip numarası vardır!!
+
+Domain ile sunucu bilgisayarının cname’i  numarası birbirine eşleştirilir!!
+
+Cname, arka planda, sunucunun Disk’inin bir bölümüne gitmesi gerekir
+Burada da dns denen bir yapı ortaya çıkar!!
+
+ Eğer siz kendi bilgisayarınızı bir sunucu yapmak isterseniz 
+Dns kurmak zorundasınız!!
+
+Her sunucunun bir sabit ip adresi olması zorunludur!!
+
+İp aadresi, internete bağlanan her cihaz da var.
+
+Ancak ip adresleri, belirli, periyodlarda yada modemi açıp kapattığınızda değişecektir!!
+
+Turknet : merhaba ben uğur, sabit ip istiyorum 
+Turknet : ayda 100 TL fatura ek !!
+
+IP4 ve IP6
+
+Ortadoğu teknik üniversitesi(Nic)
+com.tr domainler buradan alınıyor!!
+
+Trendyol.com
+
+satis.trenyol.com
+kargo.trendyol.com
+
+Şirket olarak almak isterseniz 
+Vergi levhası ticari sicil gazetesi, imza sirküleri vb.
+Marka tescil belge 
+
+Sultanahmet köftecisi
+Sarıyer börekçisi
+
+
+Bir web sitesi yapacaksak ne lazım 
+Html : Basit bir dil, açılan ve kapanan taglar ile yazılır <a> 
+Bir derleyiciye ihtiyaç duymaz Tarayıcılar html’i derleyebilirler
+
+Html  : html  web sayfaları tasarlamak için kullanılır
+CSS :  tasarlanan web sayfalarına, stiller eklemek için kullanacağız
+Tasarım yapabilmek için,
+Javascript - Jquery : sayfa içerisindeki basit programalama yapabilmek için 
+MVC : Pattern - Model -view-controller - Aspnet net core - c#
+
+Bizim yazdığımız web uygulamalarını çalıştıran program nedir ? 
+
+Microsoft : IIS
+
+Asali1122
+V223ffee32
+*************
+
+****************
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+-->
 <!--Html temelde iki parçadan oluşur-->
 <html>
-    <head>
+
+<head>
     <!--Sayfa ile ilgili açıklamalar
      arama motorlarında öne çıkması için sitenizi anlatan keyword'ler yada css ve javascript kodları yazılmaktadır!-->
-    </head>
-    <body>
-       <!--Body bölümün içerisine sayfanın tasarımını oluşturacak öğeler yazılır--> 
-       
-       <h1>H1 Başlık</h1>
-       <h2>H2 Başlık</h2>
-       <h3>H3 Başlık</h3>
-       <h4>H4 Başlık</h4>
-       <h5>H5 Başlık</h5>
-       <h6>H6 başlık</h6>
+     <!--css yazabilmek için öncelikle head elementlerinin arasında olmamız lazım, head etkiletlerinin hemen içerisine style etiketlerinin arasına css'lerimizi yazabiliriz-->
+     <style>
+        body{
+            background-color:salmon;
+        }
 
-       <p>P elementi paragraf açmanız için kullanılır</p>
-       <p>ikinci paragraf elementi</p>
-       <b>yazıyı bold yazmak için kullanılır</b>
-       <i>yazıyı italik yazmak için kullanılır</i>
-       <strong>Stron element</strong>
+        #ilkh{
+            
+            background-color: yellowgreen;
+        }
+        .ulstyle{
+            color: blueviolet;
+        }
 
-       <ul>
+        div.ortadiv{
+
+            background-color: red;
+            width: 200px;
+            height: 200px;
+
+        }
+
+
+     </style>
+</head>
+
+<body>
+    <!--Body bölümün içerisine sayfanın tasarımını oluşturacak öğeler yazılır-->
+
+    <h1 id="ilkh">H1 Başlık</h1>
+    <h2 class="ortadiv">H2 Başlık</h2>
+    <h3>H3 Başlık</h3>
+    <h4>H4 Başlık</h4>
+    <h5>H5 Başlık</h5>
+    <h6 class="ulstyle">H6 başlık</h6>
+
+    <p id="ilkh">P elementi paragraf açmanız için kullanılır</p>
+    <p>ikinci paragraf elementi</p>
+    <b>yazıyı bold yazmak için kullanılır</b>
+    <i>yazıyı italik yazmak için kullanılır</i>
+    <strong class="ulstyle">Stron element</strong>
+
+    <ul>
         <li>1. madde</li>
         <li>2. madde</li>
         <li>3. madde</li>
         <li>4. madde</li>
-       </ul>
+    </ul>
 
-       <ol>
-        <li>Anasayfa</li>
+    <ol>
+        <li class="ulstyle">Anasayfa</li>
         <li>Misyon</li>
         <li>Vizyon</li>
         <li>İletişim</li>
-       </ol>
+    </ol>
 
-<!--Blank ifadesi yeni bir sayfa açar, blank olmazsa, açılacak olan sayfa sizin sayfanızın üzerinde açılır!!-->
-       <a href="https://www.google.com" target="_blank" >linke tıklayınız!!</a>
+    <!--Blank ifadesi yeni bir sayfa açar, blank olmazsa, açılacak olan sayfa sizin sayfanızın üzerinde açılır!!-->
+    <a href="https://www.google.com" target="_blank">linke tıklayınız!!</a>
 
 
-       <!--bir tablo oluşturduk, bu tablonun 2 tane satırı var,
+    <!--bir tablo oluşturduk, bu tablonun 2 tane satırı var,
        2. satırın içerisine başka bir tablo daha yaptık!! ve bu tabloların kenarları belirginleşsin diye border verdik!!-->
-       <!--Tablo -->
-       <table border="10px">
+    <!--Tablo -->
+    <table border="10px">
         <tr>
-            <td>1. satır 1. sutün</td><td>1. satır 2. sutün</td>
+            <td>1. satır 1. sutün</td>
+            <td>1. satır 2. sutün</td>
         </tr>
         <tr>
             <td>2. satır tek sutün</td>
             <td>
 
                 <table border="2">
-                    <tr><td>1</td><td>2</td></tr>
+                    <tr>
+                        <td>1</td>
+                        <td>2</td>
+                    </tr>
                 </table>
             </td>
         </tr>
-       </table>
-       
+    </table>
 
-<!--kayan yazı-->
-<marquee>Biz Htmi seviyoruz</marquee>
-<marquee><h1>h1'ler olarak bizde seviyoruz</h1></marquee>
 
-<!--ekrana bir buton oluşturalım-->
-<input type="button" value="Ben bir butonum" name="adbutton">
-<!--metin girilen bir textbox oluşturalım-->
-<input type="text" placeholder="buraya yazı yazabilirsin">
+    <!--kayan yazı-->
+    <marquee>Biz Htmi seviyoruz</marquee>
+    <marquee>
+        <h1>h1'ler olarak bizde seviyoruz</h1>
+    </marquee>
 
-<!--html olarak input password oluşturmak içindir!!-->
-<input type="password">
+    <!--ekrana bir buton oluşturalım-->
+    <input type="button" value="Ben bir butonum" name="adbutton">
+    <!--metin girilen bir textbox oluşturalım-->
+    <input type="text" placeholder="buraya yazı yazabilirsin">
 
-<!--aşağıdaki imputun bir ekranı yoktur, html olarak arka planda durur!-->
-<input type="hidden" value="ben ekranda görünmem ama html olarak varım!">
-    </body>
+    <!--html olarak input password oluşturmak içindir!!-->
+    <input type="password">
+
+    <!--aşağıdaki imputun bir ekranı yoktur, html olarak arka planda durur!-->
+    <input type="hidden" value="ben ekranda görünmem ama html olarak varım!">
+
+    <!--sitenizden dosya yükleme yapmak için kullanılır-->
+
+    <br>
+    <input type="file">
+
+    <!--kullanıcının bir değer seçmesini istediğiniz zaman radio button kullanılır-->
+    <br>
+    <input type="radio">
+
+    <!--Radio button ve checkbox birbirinin aynısıdır, temel olarak kullanıcıya bir seyler seçtirmek isterseniz kullanabilirsiniz
+    ikisi arasındaki temel fark, radio button grubundan bir radio button seçilirken checkbox çoklu seçilebilir!!-->
+    <br>
+    <input type="checkbox" value="CheckBox">
+
+    <!--imput type text'ten daha uzun metinler girilebilmesi için-->
+    <br>
+    <textarea  style="width: 100%;height: 300px;background-color:antiquewhite;">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Aperiam sequi totam eum ab et repudiandae fugit quisquam eaque quaerat. Obcaecati inventore enim saepe accusamus quas unde reprehenderit perferendis a facere ullam minus mollitia atque dolorem deserunt, necessitatibus laudantium aspernatur magnam modi? Voluptatum, modi iste? Accusamus incidunt alias fugit, praesentium dolor molestias. Quae reprehenderit, dolores, blanditiis earum ea praesentium vel laudantium facere doloribus et ducimus distinctio accusantium veniam, doloremque quam animi illo. Aut nostrum earum nobis, sunt ullam consectetur culpa tenetur, delectus eos consequuntur voluptatibus in esse at, modi nulla laudantium. Nemo cumque aperiam eligendi in voluptates! Nostrum fuga reprehenderit obcaecati, nobis aut ipsam consequatur distinctio doloribus delectus, vitae doloremque voluptatibus est molestiae consectetur modi quod, a ducimus explicabo iure libero necessitatibus laborum. Pariatur eos mollitia eligendi quo inventore amet et odio quidem debitis. Temporibus iste sunt unde maxime? Voluptate exercitationem totam nemo! Illum quam magnam numquam accusamus id. Sapiente, provident! Optio magni cupiditate illo ipsa, assumenda vel earum ad dolores reprehenderit sequi quo adipisci architecto id, culpa similique impedit sunt commodi libero veritatis in iure temporibus repellendus nemo. Accusamus vitae saepe eligendi adipisci hic porro suscipit, labore sequi repellat nam nostrum temporibus soluta sunt tempore quidem similique alias rem maiores. Consequatur officiis harum consequuntur, culpa unde commodi quia blanditiis placeat quasi dignissimos voluptates illum quam voluptas nisi molestiae repellat sequi ex architecto delectus necessitatibus saepe eius provident eveniet? Officia maxime deserunt aliquid eveniet corrupti fuga eligendi laudantium velit dolor quis vel porro labore quod possimus ullam, ipsum expedita quae a quos culpa quisquam cumque consequatur blanditiis? Reiciendis ab neque at! Numquam fuga eius ut rem sint molestiae placeat reprehenderit cupiditate explicabo nostrum sapiente exercitationem, itaque tempora labore soluta, aliquid ullam debitis. Illo debitis quae, explicabo recusandae consequuntur architecto voluptas impedit rem ad beatae ratione provident animi inventore voluptatem tempora voluptatum, voluptatibus consectetur et illum molestiae modi. Aliquam quam iste dolor ea sed facilis consequatur non vel nostrum fugiat delectus, eligendi illo aut obcaecati, tenetur accusamus sunt eum aliquid voluptatum. Nobis doloremque corrupti quasi adipisci nam, nemo incidunt eligendi. Nesciunt deserunt quod ab ea ratione, dolores mollitia porro! Sed voluptatibus, quos nobis, corrupti tenetur magni similique quae vel natus hic laudantium quidem ducimus, commodi illo dolorem accusantium. Porro, perferendis. Nesciunt id ipsa provident doloribus labore quaerat odio nemo facere reprehenderit! Corporis, maxime unde ex quos commodi ab natus nostrum odio, in eaque, illum perspiciatis? Quos harum odit dolores ad explicabo veritatis totam, eaque consequuntur laudantium alias quasi consequatur qui quo dolorem iure asperiores in eligendi quas molestias at molestiae fugiat ab delectus. Dolore molestiae quidem rerum temporibus dolor. Iure animi, tempora fugit corporis illo itaque vero adipisci unde? Non sunt aut repellat fuga perferendis, illum optio magnam omnis aperiam! Totam similique temporibus animi nesciunt quasi fugit voluptate maxime necessitatibus obcaecati velit! Fugiat quisquam consequatur nulla, dolorem tempora minima optio fugit aliquid ipsam quas voluptatum dolore non magni dolorum ea facere architecto aspernatur rem dolores minus laudantium impedit ab fuga eaque! Molestias quas atque sed quibusdam veniam, maxime hic saepe laudantium dignissimos.</textarea>
+    <!--iki html etiketi arasına boşluk koymak için, yada yan yana olan etkilerden bir tanesinia alt satıra indirmek için-->
+    <br>
+    <br>
+    <br>
+    <!--sayfa boyunca düz bir çizgi oluşmasını isterseniz hr etkiletini kullanabilirsiniz-->    
+    <hr>
+    <br>
+    
+    <!--Sayfasına image koymak istediğinizde-->
+    <img alt="bu resim bir reklamdır!!" width="400px" height="600px" src="https://picsum.photos/400/600">
+
+    <div style="width: 100px;height: 100px; background-color: deeppink; border: 1px solid green;">ben div'im</div>
+
+    <div></div>
+
+    <p>ben en alttaki p'yim</p>
+    <div>1. div</div><div class="ortadiv">2. div</div><div>3. div</div>
+</body>
+
 </html>
