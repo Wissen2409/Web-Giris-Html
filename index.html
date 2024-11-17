@@ -167,17 +167,22 @@ V223ffee32
 
         }
 
+        /* table'nin içerisindeki 
+        tr'nin içerisindeki
+         td içerisindeki, 
+         ul içerisindeki
+        li'nin içerisindeki a*/
         table tr td ul li a{
 
             text-decoration: none; /*normaldei a etiketlerinin altı çizgili olur text-decoration bu altındaki çizgiyi kaldırır!!*/
             color:yellow;
             background-color: red;
         }
-        /* table'nin içerisindeki 
-        tr'nin içerisindeki
-         td içerisindeki, 
-         ul içerisindeki
-        li'nin içerisindeki a*/
+        /*element tipi ul olan ve class'ı example olan ul'un içerisindeki li ve li'nin içerisindeki a*/
+        ul.example>li>a{
+            background-color: red;
+            font-size: 20px;
+        }
 
     </style>
 </head>
@@ -185,7 +190,7 @@ V223ffee32
 <body>
 
 
-    <ul>
+    <ul class="example">
         <li>
             <a>1. seviye a</a>
             <ul>
@@ -198,8 +203,7 @@ V223ffee32
         <li><a>1. seviye a</a></li>
         <li><a>1. seviye a </a></li>
     </ul>
-    
-
+    <li></li>
     <table>
         <tr>
             <td>
@@ -210,6 +214,7 @@ V223ffee32
                 <ul>
                     <li>ilk td ucuncu.li</li>
                     <li>ilk td dorduncu li</li>
+                    <li></li>
                 </ul>
             </td>
         </tr>
