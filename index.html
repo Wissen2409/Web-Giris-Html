@@ -113,34 +113,132 @@ V223ffee32
 <head>
     <!--Sayfa ile ilgili açıklamalar
      arama motorlarında öne çıkması için sitenizi anlatan keyword'ler yada css ve javascript kodları yazılmaktadır!-->
-     <!--css yazabilmek için öncelikle head elementlerinin arasında olmamız lazım, head etkiletlerinin hemen içerisine style etiketlerinin arasına css'lerimizi yazabiliriz-->
-     <style>
-        body{
-            background-color:salmon;
-        }
+    <!--css yazabilmek için öncelikle head elementlerinin arasında olmamız lazım, head etkiletlerinin hemen içerisine style etiketlerinin arasına css'lerimizi yazabiliriz-->
+    <style>
+        /*id dğeri ilkh olan elementler*/
+        #ilkh {
 
-        #ilkh{
-            
             background-color: yellowgreen;
         }
-        .ulstyle{
+
+        /*class'i ulstyle olan elementler*/
+        .ulstyle {
             color: blueviolet;
         }
 
-        div.ortadiv{
+        /*element tipi div olan ve ortadiv class'ı kullanan divler*/
+        div.ortadiv {
 
             background-color: red;
             width: 200px;
             height: 200px;
+        }
+
+        /*group selector, tek seferde elementlere css vermek h1,h2,h5 ve div'e aşağıdaki css'i uygula*/
+        h1,
+        h2,
+        h5,
+        div {
+            font-family: Verdana, Geneva, Tahoma, sans-serif;
+            font-size: 40px;
+            color: chartreuse;
+            background-color: coral;
+        }
+
+        /*div olan class'ı main olan p elementi*/
+        div.main p {
+            color: blanchedalmond;
+            /*div içerisindeki p'nin rengi*/
+            font-size: 60px;
+            /*div içerisindeki p'nin fontunun büyüklüğü*/
+            text-align: center;
+            /*div içerisindeki p'nin yazısını ortalar*/
+        }
+
+        /*ul elementi içerisindeki class'i liste olan li*/
+        ul li.liste {
+
+            border: 2px solid red;
+            /*elemente border vermek, kenar çizgileri vermek demektir 2 px kalınlıkta kenar çizgisi, rengi kırmızı ve solid:düz çizgi*/
+        }
+        div div ul li#ikincili{
+
+            border: 5px dashed black;
 
         }
 
+        table tr td ul li a{
 
-     </style>
+            text-decoration: none; /*normaldei a etiketlerinin altı çizgili olur text-decoration bu altındaki çizgiyi kaldırır!!*/
+            color:yellow;
+            background-color: red;
+        }
+        /* table'nin içerisindeki 
+        tr'nin içerisindeki
+         td içerisindeki, 
+         ul içerisindeki
+        li'nin içerisindeki a*/
+
+    </style>
 </head>
 
 <body>
+
+
+    <ul>
+        <li>
+            <a>1. seviye a</a>
+            <ul>
+                <li><a>2. seviye a</a></li>
+                <li><a>2. seviye a</a></li>
+                <li><a>2. seviye a</a></li>
+            </ul>
+        </li>
+        <li><a>1. seviye a</a></li>
+        <li><a>1. seviye a</a></li>
+        <li><a>1. seviye a </a></li>
+    </ul>
+    
+
+    <table>
+        <tr>
+            <td>
+                <ul>
+                    <li>ilk td ilk li</li>
+                    <li>ilk td ikinci li<a>ben ilk a'yım</a></li>
+                </ul>
+                <ul>
+                    <li>ilk td ucuncu.li</li>
+                    <li>ilk td dorduncu li</li>
+                </ul>
+            </td>
+        </tr>
+        <tr>
+            <td>
+                <ul>
+
+                    <li>ikinci td birinci li <a>ben ikinci a'yım</a></li>
+                    <li>ikinci td ikinci li</li>
+                </ul>
+            </td>
+        </tr>
+    </table>
     <!--Body bölümün içerisine sayfanın tasarımını oluşturacak öğeler yazılır-->
+    <div>
+        <div>
+            <ul>
+                <li>1 li</li>
+                <li id="ikincili">2.li</li>
+                <li>3 li</li>
+            </ul>
+        </div>
+    </div>
+
+    <ul>
+        <li>Lorem ipsum dolor sit amet.</li>
+        <li>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</li>
+        <li class="liste">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Recusandae, consequatur.</li>
+    </ul>
 
     <h1 id="ilkh">H1 Başlık</h1>
     <h2 class="ortadiv">H2 Başlık</h2>
@@ -154,6 +252,10 @@ V223ffee32
     <b>yazıyı bold yazmak için kullanılır</b>
     <i>yazıyı italik yazmak için kullanılır</i>
     <strong class="ulstyle">Stron element</strong>
+
+    <div class="main">
+        <p>Ben div içerisindeki p'yim</p>
+    </div>
 
     <ul>
         <li>1. madde</li>
@@ -229,15 +331,16 @@ V223ffee32
 
     <!--imput type text'ten daha uzun metinler girilebilmesi için-->
     <br>
-    <textarea  style="width: 100%;height: 300px;background-color:antiquewhite;">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Aperiam sequi totam eum ab et repudiandae fugit quisquam eaque quaerat. Obcaecati inventore enim saepe accusamus quas unde reprehenderit perferendis a facere ullam minus mollitia atque dolorem deserunt, necessitatibus laudantium aspernatur magnam modi? Voluptatum, modi iste? Accusamus incidunt alias fugit, praesentium dolor molestias. Quae reprehenderit, dolores, blanditiis earum ea praesentium vel laudantium facere doloribus et ducimus distinctio accusantium veniam, doloremque quam animi illo. Aut nostrum earum nobis, sunt ullam consectetur culpa tenetur, delectus eos consequuntur voluptatibus in esse at, modi nulla laudantium. Nemo cumque aperiam eligendi in voluptates! Nostrum fuga reprehenderit obcaecati, nobis aut ipsam consequatur distinctio doloribus delectus, vitae doloremque voluptatibus est molestiae consectetur modi quod, a ducimus explicabo iure libero necessitatibus laborum. Pariatur eos mollitia eligendi quo inventore amet et odio quidem debitis. Temporibus iste sunt unde maxime? Voluptate exercitationem totam nemo! Illum quam magnam numquam accusamus id. Sapiente, provident! Optio magni cupiditate illo ipsa, assumenda vel earum ad dolores reprehenderit sequi quo adipisci architecto id, culpa similique impedit sunt commodi libero veritatis in iure temporibus repellendus nemo. Accusamus vitae saepe eligendi adipisci hic porro suscipit, labore sequi repellat nam nostrum temporibus soluta sunt tempore quidem similique alias rem maiores. Consequatur officiis harum consequuntur, culpa unde commodi quia blanditiis placeat quasi dignissimos voluptates illum quam voluptas nisi molestiae repellat sequi ex architecto delectus necessitatibus saepe eius provident eveniet? Officia maxime deserunt aliquid eveniet corrupti fuga eligendi laudantium velit dolor quis vel porro labore quod possimus ullam, ipsum expedita quae a quos culpa quisquam cumque consequatur blanditiis? Reiciendis ab neque at! Numquam fuga eius ut rem sint molestiae placeat reprehenderit cupiditate explicabo nostrum sapiente exercitationem, itaque tempora labore soluta, aliquid ullam debitis. Illo debitis quae, explicabo recusandae consequuntur architecto voluptas impedit rem ad beatae ratione provident animi inventore voluptatem tempora voluptatum, voluptatibus consectetur et illum molestiae modi. Aliquam quam iste dolor ea sed facilis consequatur non vel nostrum fugiat delectus, eligendi illo aut obcaecati, tenetur accusamus sunt eum aliquid voluptatum. Nobis doloremque corrupti quasi adipisci nam, nemo incidunt eligendi. Nesciunt deserunt quod ab ea ratione, dolores mollitia porro! Sed voluptatibus, quos nobis, corrupti tenetur magni similique quae vel natus hic laudantium quidem ducimus, commodi illo dolorem accusantium. Porro, perferendis. Nesciunt id ipsa provident doloribus labore quaerat odio nemo facere reprehenderit! Corporis, maxime unde ex quos commodi ab natus nostrum odio, in eaque, illum perspiciatis? Quos harum odit dolores ad explicabo veritatis totam, eaque consequuntur laudantium alias quasi consequatur qui quo dolorem iure asperiores in eligendi quas molestias at molestiae fugiat ab delectus. Dolore molestiae quidem rerum temporibus dolor. Iure animi, tempora fugit corporis illo itaque vero adipisci unde? Non sunt aut repellat fuga perferendis, illum optio magnam omnis aperiam! Totam similique temporibus animi nesciunt quasi fugit voluptate maxime necessitatibus obcaecati velit! Fugiat quisquam consequatur nulla, dolorem tempora minima optio fugit aliquid ipsam quas voluptatum dolore non magni dolorum ea facere architecto aspernatur rem dolores minus laudantium impedit ab fuga eaque! Molestias quas atque sed quibusdam veniam, maxime hic saepe laudantium dignissimos.</textarea>
+    <textarea
+        style="width: 100%;height: 300px;background-color:antiquewhite;">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Aperiam sequi totam eum ab et repudiandae fugit quisquam eaque quaerat. Obcaecati inventore enim saepe accusamus quas unde reprehenderit perferendis a facere ullam minus mollitia atque dolorem deserunt, necessitatibus laudantium aspernatur magnam modi? Voluptatum, modi iste? Accusamus incidunt alias fugit, praesentium dolor molestias. Quae reprehenderit, dolores, blanditiis earum ea praesentium vel laudantium facere doloribus et ducimus distinctio accusantium veniam, doloremque quam animi illo. Aut nostrum earum nobis, sunt ullam consectetur culpa tenetur, delectus eos consequuntur voluptatibus in esse at, modi nulla laudantium. Nemo cumque aperiam eligendi in voluptates! Nostrum fuga reprehenderit obcaecati, nobis aut ipsam consequatur distinctio doloribus delectus, vitae doloremque voluptatibus est molestiae consectetur modi quod, a ducimus explicabo iure libero necessitatibus laborum. Pariatur eos mollitia eligendi quo inventore amet et odio quidem debitis. Temporibus iste sunt unde maxime? Voluptate exercitationem totam nemo! Illum quam magnam numquam accusamus id. Sapiente, provident! Optio magni cupiditate illo ipsa, assumenda vel earum ad dolores reprehenderit sequi quo adipisci architecto id, culpa similique impedit sunt commodi libero veritatis in iure temporibus repellendus nemo. Accusamus vitae saepe eligendi adipisci hic porro suscipit, labore sequi repellat nam nostrum temporibus soluta sunt tempore quidem similique alias rem maiores. Consequatur officiis harum consequuntur, culpa unde commodi quia blanditiis placeat quasi dignissimos voluptates illum quam voluptas nisi molestiae repellat sequi ex architecto delectus necessitatibus saepe eius provident eveniet? Officia maxime deserunt aliquid eveniet corrupti fuga eligendi laudantium velit dolor quis vel porro labore quod possimus ullam, ipsum expedita quae a quos culpa quisquam cumque consequatur blanditiis? Reiciendis ab neque at! Numquam fuga eius ut rem sint molestiae placeat reprehenderit cupiditate explicabo nostrum sapiente exercitationem, itaque tempora labore soluta, aliquid ullam debitis. Illo debitis quae, explicabo recusandae consequuntur architecto voluptas impedit rem ad beatae ratione provident animi inventore voluptatem tempora voluptatum, voluptatibus consectetur et illum molestiae modi. Aliquam quam iste dolor ea sed facilis consequatur non vel nostrum fugiat delectus, eligendi illo aut obcaecati, tenetur accusamus sunt eum aliquid voluptatum. Nobis doloremque corrupti quasi adipisci nam, nemo incidunt eligendi. Nesciunt deserunt quod ab ea ratione, dolores mollitia porro! Sed voluptatibus, quos nobis, corrupti tenetur magni similique quae vel natus hic laudantium quidem ducimus, commodi illo dolorem accusantium. Porro, perferendis. Nesciunt id ipsa provident doloribus labore quaerat odio nemo facere reprehenderit! Corporis, maxime unde ex quos commodi ab natus nostrum odio, in eaque, illum perspiciatis? Quos harum odit dolores ad explicabo veritatis totam, eaque consequuntur laudantium alias quasi consequatur qui quo dolorem iure asperiores in eligendi quas molestias at molestiae fugiat ab delectus. Dolore molestiae quidem rerum temporibus dolor. Iure animi, tempora fugit corporis illo itaque vero adipisci unde? Non sunt aut repellat fuga perferendis, illum optio magnam omnis aperiam! Totam similique temporibus animi nesciunt quasi fugit voluptate maxime necessitatibus obcaecati velit! Fugiat quisquam consequatur nulla, dolorem tempora minima optio fugit aliquid ipsam quas voluptatum dolore non magni dolorum ea facere architecto aspernatur rem dolores minus laudantium impedit ab fuga eaque! Molestias quas atque sed quibusdam veniam, maxime hic saepe laudantium dignissimos.</textarea>
     <!--iki html etiketi arasına boşluk koymak için, yada yan yana olan etkilerden bir tanesinia alt satıra indirmek için-->
     <br>
     <br>
     <br>
-    <!--sayfa boyunca düz bir çizgi oluşmasını isterseniz hr etkiletini kullanabilirsiniz-->    
+    <!--sayfa boyunca düz bir çizgi oluşmasını isterseniz hr etkiletini kullanabilirsiniz-->
     <hr>
     <br>
-    
+
     <!--Sayfasına image koymak istediğinizde-->
     <img alt="bu resim bir reklamdır!!" width="400px" height="600px" src="https://picsum.photos/400/600">
 
@@ -246,7 +349,9 @@ V223ffee32
     <div></div>
 
     <p>ben en alttaki p'yim</p>
-    <div>1. div</div><div class="ortadiv">2. div</div><div>3. div</div>
+    <div>1. div</div>
+    <div class="ortadiv">2. div</div>
+    <div>3. div</div>
 </body>
 
 </html>
