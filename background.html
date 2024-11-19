@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+
+        div{
+            width: 800px;
+            height: 700px;
+            border: 3px solid black;
+            background-image: url('https://picsum.photos/50/75'); /*arka plana verilecek resmin yolu*/
+            background-repeat: no-repeat; /*arka plana eklenen resmin, kendi tekrarlamaması*/
+            background-position: left top; /*arka olarak belirlenen resmin, arka plan olduğu kontrolden küçük olduğu durumda, resmin hangi köşeye sıfırlanacağı bilgisi*/
+            background-size: 100% 100%; /*arka olacak resmin boyutu, 100 100 verirseniz arka plan olduğu elementin her yerini kaplar*/ 
+            
+        }
+        body{
+
+            background-image: url('images/resim.jpg'); /*eğer resmi internetten değilde, klasörden yüklemek için bu yönemi kullanabilirsiniz*/
+        }
+
+
+        /*p'ye daha önce renk verdik, ancak hexedecimal renk verelim */
+        p{
+
+            background-color: #ff0000;
+        }
+
+        
+    </style>
+</head>
+<body>
+    
+
+    <div></div>
+    <p>Ben bir paragrafım</p>
+
+</body>
+</html>

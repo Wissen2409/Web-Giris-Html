@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+
+        span{
+            display: block; /*sayfanın satırını kaplamayan yani aynı satırda başka elemente izin veren elementler, display : block kullandıklarında satırı olduğu gibi kullanmaya başlarlar!!!*/
+        }
+        div{
+            display:inline-block; /*div doğası gereği satırı kaplayan bir elementir(display:block'tur ancak inlineblock dediğimizde, iki div'i yan yana getirebiliriz.)*/
+            
+            width: 200px;
+            height: 200px;
+            border:2px solid black;
+        }
+
+        h5{
+
+            display: none; /*elemanın görünürlüğünü kapatır!!*/
+        }
+    </style>
+</head>
+<body>
+    
+    <span>Lorem ipsum dolor sit amet consectetur adipisicing elit. Atque, ut.</span>
+    <b>Lorem ipsum dolor sit amet.</b>
+    <div></div>
+    <div></div>
+    <h5>Lorem, ipsum dolor.</h5>
+</body>
+</html>

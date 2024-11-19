@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+
+        /*Margin  : iki elemanın birbirine göre uzaklığı belirler*/
+        /*Padding bir elemanın içindeki diğer bir elemanın, içteki elemanın dıştaki elemana köşesine uzaklığını belirler!!!*/
+
+        /*hem margin hemde padding dört taraftanda verilebilen ölçülerdir!! */
+        #yan{
+            width: 500px;
+            height: 500px;
+            margin-left: 200px;
+            background-color: black;
+            display: inline-block;
+        }
+        #dis{
+            width: 500px;
+            height: 500px;
+            border: 2px solid red;
+          
+            background-color: yellow;
+            display: inline-block;
+            
+        }
+
+        #ic{
+            background-color: blueviolet;
+            width: 100px;
+            height: 100px;
+            margin-left: 20px;
+            box-sizing: border-box;
+        }
+
+        p{
+            padding-left: 200px;
+            padding-top: 10px;
+        }
+        #inputtext{
+            padding-left: 10px;
+            box-sizing: border-box;
+            width: 100px;
+            height: 20px;
+        }
+       
+
+    </style>
+</head>
+<body>
+    
+    <div id="dis">
+        <div id="ic"></div>
+        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Dolorum, ad.</p>
+        <input id="inputtext" type="text" value="Kullanıcı Adı : ">
+    </div>
+    <div id="yan"></div>
+</body>
+</html>
