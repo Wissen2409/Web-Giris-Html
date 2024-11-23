@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+
+    body{
+
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background-color:white;
+        animation: wheelspin 5s linear infinite;
+    }
+    .tekerlek{
+
+        width: 612px;
+        height: 459px;
+        background-repeat: no-repeat; /*background imaj sürekli tekrar etmemesi için!!*/
+        
+        animation: wheelspin 5s linear infinite;
+        background-image: url("https://media.istockphoto.com/id/454977365/photo/wooden-wheel.jpg?s=612x612&w=0&k=20&c=trAYUkPvXP1B3l2gfdk2vSTwqrdmoOyUbU00n3JklVY=");
+    }
+    @keyframes wheelspin{
+
+        /*from{
+            transform: rotate(0deg);
+        }
+        to{
+            transform:rotate(360deg);
+        }
+        */
+        /*alternatif!*/
+        0%{
+            transform: rotate(0deg);
+        }
+        100%{
+
+            transform:rotate(360deg);
+        }
+    }
+
+</style>
+<body>
+    <div class="tekerlek"></div>
+</body>
+</html>
