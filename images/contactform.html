@@ -5,6 +5,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+
     <style>
 
         /*Flexbox konumuz, box model,grid box, animasyonlar, external css*/
@@ -36,8 +37,20 @@
         }
 
         form {
-            display: flex;
-            flex-direction: column;
+            display:flex; /*display flex : elementlerin, esnek bir yapıda olması gerektiğini belirtir*/
+            flex-direction:column-reverse;/*html de öğeler, belirli kurallara göre sıralanır 
+            Block tipinde bir element ise, alt alta, block tipinde değilse, yan yana sıralanır
+            
+            display : flex işte bu default durumu daha esnek hale getirmek için kullanılır
+            
+            display:flex 'in aynı zamanda elementleri sıralamak için flex-direction özelliğide kullanılabilir
+            
+            flex-direction : column  : elemenletin kolon olarak alt alta sıralar
+            flex-direction : row     : elementleri satır içerisinde sıralar
+            flex-direction : column-reverse : kolon olarak tersten sıralar
+            flex-direction : row-reverse    : satır olarak tersten sıralar
+            
+            flex ve flex-direction html elementlerin varsayılan davranışlarını (sayfa içerisindeki yerleşme) bunları değiştirir!!!*/
             background-color: 
         
 
@@ -107,7 +120,7 @@
 
             <label>Email :</label>
             <input type="email" id="email" name="email" placeholder="Email adresini giriniz">
-
+            <br>
             <label>Mesaj : </label>
             <textarea id="mesaj" name="mesaj" placeholder="Lütfen mesajınızı giriniz"></textarea>
 
